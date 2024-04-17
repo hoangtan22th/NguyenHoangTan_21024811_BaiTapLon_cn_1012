@@ -169,16 +169,26 @@ window.onload = function () {
        kiemTraMatKhau2();
         
     });
-
+    // kiểm tra checked
+    function kiemTraChecked(){
+        var checkbox = document.getElementById('checked__dieukhoan');
+        if(checkbox.checked){
+            return true;
+        }
+        else{
+            alert('hãy xác nhận điều khoản');
+            return false;
+        }
+    }
     document.getElementById("Signup").addEventListener("click", function () {
         event.preventDefault(); 
         
-       
+        
         if (kiemTraHoTen() &&kiemTraNgaySinh() && kiemTraGioiTinh() && kiemTraDiaChi() &&
             kiemTraDienThoai() &&
             kiemTraEmail() &&
             kiemTraTaiKhoan() &&
-            kiemTraMatKhau() && kiemTraMatKhau2()) {
+            kiemTraMatKhau() && kiemTraMatKhau2()&&kiemTraChecked()) {
             var username = document.getElementById('txtTaiKhoan').value;
             var password = document.getElementById('txtMatKhau').value;
             var user = {
