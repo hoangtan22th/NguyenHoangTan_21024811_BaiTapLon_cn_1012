@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+        .wrapper{
+            height: 500px;
+            width: 900px;
+            margin: 100px auto;
+            border: 2px solid black;
+        }
+        .header{
+            border-bottom: 2px solid black;
+            height: 80px;
+            text-align: center;
+            line-height: 78px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        nav{
+            border-bottom: 2px solid black;
+            height: 50px;
+            text-align: center;
+            line-height: 48px;
+        }
+        .container{
+            display: grid;
+            text-align: center;
+            /* grid-template-columns: 2fr 10fr; */
+            grid-template-columns: 1fr 2fr 1fr;
+            display: flex;
+            justify-content: center
+
+        }
+        .sidebar{
+            border-right: 2px solid black;
+            text-align: center;
+            height: 300px;
+
+        }
+        .content{
+            border-right: 2px solid black;
+
+        }
+        footer{
+            text-align: center;
+            border-top: 2px solid black;
+
+        }
+        .form{
+            margin: 20px;
+            border: 2px solid black;
+            height: 200px;
+            width: 300px;
+            
+        }
+        table{
+            height: 200px;
+            text-align: center;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <span>logo</span>
+            <span>form tìm kiếm</span>
+            <span>tài khoản</span>
+            <span>Giỏ hàng</span>
+        </header>
+        <nav>Menu</nav>
+        <div class="container">
+            <!-- <div class="sidebar">Danh mục</div>
+            <div class="content">Sản phẩm</div>
+            <div class="content2">Sản phẩm</div> -->
+            <!-- <div class="sidebar">Hình sản phẩm</div>
+            <div class="content">Thông tin sản phẩm</div>
+            <div class="content2">
+                <p>Số lượng</p>
+                <p>Giá tiền </p>
+                <p>Mua</p>
+                <p>Thêm vào giỏ hàng</p>
+            </div> -->
+            
+            <!-- <p style="margin-top: 200px;" >Btn mua ngay</p> -->
+        </div>
+        <div class="container">
+            <div class="form">
+                <p>Đăng ký</p>
+               <p> Đăng nhập</p>
+               
+            </div>
+        </div>
+
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>
